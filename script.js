@@ -9,10 +9,10 @@ const musicBtn = document.getElementById('music-btn');
 musicBtn.addEventListener('click', () => {
   if (music.paused) {
     music.play();
-    musicBtn.innerText = "⏸️ Pause Music";
+    musicBtn.innerText = "𝄞⨾💿✮˚.⋆";
   } else {
     music.pause();
-    musicBtn.innerText = "🎵 Play Music";
+    musicBtn.innerText = "˖ ݁♬⋆.˚𝄞.";
   }
 });
 
