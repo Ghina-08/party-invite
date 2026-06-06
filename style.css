@@ -1,0 +1,161 @@
+
+@import url(https://fonts.googleapis.com/earlyaccess/amiri.css);
+
+
+* {
+  
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: -1;
+  background-color: transparent;
+}
+
+
+body {
+  
+  font-family: 'Amiri', serif;
+  /*background: url('wallpaper.jpg'); 
+  background-size: auto;
+  background-repeat: no-repeat;*/
+  
+  line-height: 1.6;
+  position: relative;
+  min-height: 200vh;
+  isolation: isolate;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh; /* Keeps it exactly at phone viewport height */
+  z-index: -1; 
+  background: url('wallpaper.jpg'); /* A soft, cute pastel pink/white background */
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: top center;
+  
+
+}
+/*
+body:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: url('wallpaper.jpg'); 
+  background-repeat: no-repeat;
+  background-position: top center;
+  
+}*/
+
+/* --- Hero Section --- */
+.hero-section {
+  height: 100vh; /* Takes up the full height of the screen */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /*background: /*linear-gradient(#ffaabe, rgba(255, 245, 245, 1)), */
+              /*url('wallpaper.jpg'); /* Optional: Add a subtle pattern background link here */
+  /*background-repeat: no-repeat;*/
+  /*background-size: cover;
+  padding: 20px;*/
+}
+
+h1 {
+  font-size: 3rem;
+  color: #ffaabe; /* A beautiful warm gold/rose tone */
+  margin-right: 15px;
+  margin-top: 80px;
+}
+
+.subtitle {
+  color:#FFEE8C;
+  font-size: 1.2rem;
+  margin-right: 20px;
+  text-shadow: 1px 1px 1px #cc8b86;
+  
+}
+
+#music-btn {
+  padding: 15px 70px;
+  background-color: #FFEE8C;
+  color: #ffaabe;
+  border: none;
+  border-radius: 10px;
+  cursor: hand;
+  font-weight: bold;
+  transition: transform 0.2s;
+  margin-top: 15px;
+  margin-right: 15px;
+}
+
+#music-btn:hover {
+  transform: scale(1.05);
+}
+
+/* --- Content Container (Mobile-First Layout) --- */
+.content-container {
+  width: 90%;
+  max-width: 600px; /* Perfect width for reading on both desktop and mobile */
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+.story-section, .gallery-section {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #ffaabe;
+  margin-bottom: 20px;
+  
+}
+
+p {
+  font-size: 1.5rem;
+  color:#ffaabe;
+  text-align: center;
+  margin-right: 80px;
+  margin-left: 80px;
+  text-shadow: 1px 1px 2px #ffffffce;
+}
+
+a{
+  color:#ffaabe;
+  text-shadow: 1px 1px 2px #ffffff;
+  font-size: 1.5rem;
+}
+a:hover{
+  color: #ffe655;
+  text-shadow: 1px 1px 2px #ffaabe;
+}
+
+/* --- Picture Styling with Borders --- */
+img {
+  max-width:50%;
+  height: auto;
+  z-index: -1;
+  
+}
+
+
+/* --- CSS for JavaScript Animation --- */
+/* The image starts invisible and shifted slightly downward */
+.fade-in-image {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+}
+
+/* JavaScript will append this class when the user scrolls down to the image */
+.fade-in-image.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
