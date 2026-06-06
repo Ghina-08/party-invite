@@ -12,8 +12,8 @@
 }
 
 html{
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
   background-color: transparent !important;
 }
 
@@ -39,6 +39,7 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: top center;
+  background-color: transparent !important;
   
 
 }
