@@ -41,9 +41,9 @@ body {
 
 h1 {
   font-size: 3rem;
-  color: #ffaabe; 
+  color: #f77493; 
   margin-right: 15px;
-  margin-top: 60px;
+  margin-top: 10px;
 }
 
 .subtitle {
@@ -56,7 +56,7 @@ h1 {
 #music-btn {
   padding: 15px 70px;
   background-color: #FFEE8C;
-  color: #ffaabe;
+  color: #f77493;
   border: none;
   border-radius: 10px;
   cursor: pointer; /* FIXED: 'hand' is invalid CSS, changed to 'pointer' */
@@ -85,13 +85,13 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  color: #ffaabe;
+  color: #f77493;
   margin-bottom: 20px;
 }
 
 p {
   font-size: 1.5rem;
-  color:#ffaabe;
+  color:#f77493;
   text-align: center;
   margin-right: 80px;
   margin-left: 80px;
